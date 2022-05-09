@@ -1,0 +1,51 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+
+    &__right {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: flex-end;
+        gap: 41px;
+    }
+
+    &__left {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: flex-end;
+        gap: 33px;
+        @media (max-width: 767.98px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    &_hidden {
+        @media (max-width: 767.98px) {
+            display: none;
+        }
+    }
+}
+
+.cart {
+    position: relative;
+
+    img {
+        display: block;
+    }
+
+    &__numbOfPrdct {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F16D7F;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+    }
+}

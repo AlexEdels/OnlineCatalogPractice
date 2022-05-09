@@ -1,5 +1,116 @@
+.head {
+  height: 75px;
+  background-color: #222222;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.head_paddingTop {
+  padding-top: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navBar__right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 41px;
+}
+
+.navBar__left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 33px;
+}
+
+@media (max-width: 767.98px) {
+  .navBar__left {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navBar_hidden {
+    display: none;
+  }
+}
+
+.cart {
+  position: relative;
+}
+
+.cart img {
+  display: block;
+}
+
+.cart__numbOfPrdct {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F16D7F;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1364.98px) {
+  .container {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+.head {
+    height: 75px;
+    background-color: #222222;
+    align-content: center;
+
+    &_paddingTop {
+        padding-top: 18px;
+        box-sizing: border-box;
+    }
+}
+
