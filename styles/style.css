@@ -85,6 +85,120 @@
   color: #FFFFFF;
 }
 
+.header {
+  height: 764px;
+  background-color: #F1E4E6;
+}
+
+@media (max-width: 1364.98px) {
+  .header {
+    height: 368px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header {
+    height: 363px;
+  }
+}
+
+.header__contentBox {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url(../images/index/header/man.png);
+  background-repeat: no-repeat;
+  background-position: -225px 0;
+}
+
+@media (max-width: 1364.98px) {
+  .header__contentBox {
+    background-size: contain;
+    background-position: -100px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header__contentBox {
+    background-image: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.header__content {
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
+  margin-right: 91px;
+  margin-bottom: 381px;
+}
+
+@media (max-width: 1364.98px) {
+  .header__content {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header__content {
+    height: 69px;
+  }
+}
+
+.header__title {
+  font-weight: 900;
+  font-size: 48px;
+  color: #222222;
+  line-height: 38px;
+}
+
+.header__title_font {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.header__title_pink {
+  color: #F16D7F;
+}
+
+@media (max-width: 1364.98px) {
+  .header__title {
+    font-size: 44px;
+    line-height: 29px;
+  }
+  .header__title_font {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header__title {
+    font-size: 38px;
+    line-height: 24px;
+  }
+  .header__title_font {
+    font-size: 20px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -97,20 +211,21 @@ body {
 
 .container {
   max-width: 1130px;
+  height: 100%;
   margin: 0 auto;
 }
 
 @media (max-width: 1364.98px) {
   .container {
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 @media (max-width: 767.98px) {
   .container {
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

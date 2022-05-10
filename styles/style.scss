@@ -1,5 +1,6 @@
 @import "blocks/general/head";
 @import "blocks/general/navBar";
+@import "blocks/index/header";
 
 * {
     margin: 0;
@@ -13,15 +14,16 @@ body {
 
 .container {
     max-width: 1130px;
+    height: 100%;
     margin: 0 auto;
 
     @media (max-width: 1364.98px) {
-        margin-left: 32px;
-        margin-right: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     @media (max-width: 767.98px) {
-        margin-left: 16px;
-        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }

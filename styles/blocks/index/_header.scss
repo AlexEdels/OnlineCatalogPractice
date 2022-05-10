@@ -1,0 +1,85 @@
+.header {
+    height: 764px;
+    background-color: #F1E4E6;
+
+    @media (max-width: 1364.98px) {
+        height: 368px;
+    }
+
+    @media (max-width: 767.98px) {
+        height: 363px;
+    }
+
+    &__contentBox {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-image: url(../images/index/header/man.png);
+        background-repeat: no-repeat;
+        background-position: -225px 0;
+
+        @media (max-width: 1364.98px) {
+            background-size: contain;
+            background-position: -100px 0;
+            align-items: center;
+        }
+
+        @media (max-width: 767.98px) {
+            background-image: none;
+            justify-content: center;
+        }
+    }
+
+    &__content {
+        height: 92px;
+        display: flex;
+        align-items: center;
+        border-left: 12px solid #F16D7F;
+        padding-left: 16px;
+        margin-right: 91px;
+        margin-bottom: 381px;
+
+        @media (max-width: 1364.98px) {
+            margin: 0;
+        }
+
+        @media (max-width: 767.98px) {
+            height: 69px;
+        }
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        color: #222222;
+        line-height: 38px;
+
+        &_font {
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        &_pink {
+            color: #F16D7F;
+        }
+
+        @media (max-width: 1364.98px) {
+            font-size: 44px;
+            line-height: 29px;
+
+            &_font {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 38px;
+            line-height: 24px;
+
+            &_font {
+                font-size: 20px;
+            }
+        }
+    }
+}
