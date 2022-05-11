@@ -1,0 +1,48 @@
+.catalog {
+    &_margin {
+        margin-top: 96px;
+    }
+
+    @media (max-width: 1364.98px) {
+        margin-top: 155px;
+    }
+
+    @media (max-width: 767.98px) {
+        margin-top: 64px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+    }
+
+    &__description {
+        text-align: center;
+        margin-top: 6px;
+        margin-bottom: 48px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+    }
+
+    &__box {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+
+        @media (max-width: 1024.98px) {
+            grid-template-columns: auto auto;
+            gap: 16px;
+        }
+
+        @media (max-width: 475.98px) {
+            grid-template-columns: auto;
+        }
+    }
+}

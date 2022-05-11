@@ -1,0 +1,26 @@
+.button {
+    width: 212px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #FF6A6A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    margin: 0 auto;
+
+    &_margin {
+        margin-top: 48px;
+
+        @media (max-width: 1364.98px) {
+            margin-top: 32px;
+        }
+
+        @media (max-width: 767.98px) {
+            margin-top: 40px;
+        }
+    }
+}
