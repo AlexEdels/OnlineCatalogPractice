@@ -1,0 +1,52 @@
+.b-feature {
+    height: 341px;
+    background: #222224;
+
+    @media (max-width: 1364.98px) {
+        height: 610px;
+    }
+
+    &__box {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 1364.98px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 48px;
+        }
+    }
+
+    &__el {
+        max-width: 360px;
+        height: 134px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;        
+
+        h3 {
+            font-size: 19.96px;
+            line-height: 24px;
+            color: #FBFBFB;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 13.972px;
+            line-height: 17px;
+            text-align: center;
+            color: #FBFBFB;
+        }
+    }
+
+    &__imgBox {
+        height: 40px;
+    }
+}
