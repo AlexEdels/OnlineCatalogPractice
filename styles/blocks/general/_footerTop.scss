@@ -1,0 +1,47 @@
+.b-footerTop {
+    height: 448px;
+    background-image: url(../images/general/footerTop/backgroundFooter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 1364.98px) {
+        height: 693px;
+        background-position: -450px;
+    }
+
+    &_background {
+        background: rgba(244, 244, 244, 0.7);
+        height: 100%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1364.98px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }   
+    }
+
+    &__quote {
+        margin-top: 97px;
+
+        @media (max-width: 1364.98px) {
+            margin-top: 64px;
+        }
+    }
+
+    &__subscription {
+        margin-top: 150px;
+        @media (max-width: 1364.98px) {
+            margin-top: 48px;
+        }
+
+        @media (max-width: 767.98px) {
+            margin-top: 59px;
+        }
+    }
+}

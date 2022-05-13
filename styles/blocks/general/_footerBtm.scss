@@ -1,0 +1,41 @@
+.b-footerBtm {
+    height: 79px;
+    background: #222224;
+
+    @media (max-width: 767.98px) {
+        height: 143px;
+        padding-top: 43px;
+        padding-bottom: 9px;
+        box-sizing: border-box;
+    }
+
+    &__content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+        order: 1;
+
+        @media (max-width: 767.98px) {
+            order: 2;
+        }
+    }
+
+    &__socialMediaLinks {
+        order: 2;
+
+        @media (max-width: 767.98px) {
+            order: 1;
+        }
+    }
+}

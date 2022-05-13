@@ -1,0 +1,14 @@
+.b-socialMediaLinks {
+    display: grid;
+    grid-template-columns: 31.45px 31.45px 31.45px 31.45px;
+    gap: 7px;
+
+    &__box {
+        width: 31.45px;
+        height: 32px;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,19 @@
+.b-quote {
+    max-width: 360px;
+    text-align: center;
+
+    img {
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 24px;
+        color: #222224;
+
+        span {
+            font-style: italic;
+        }
+    }
+}

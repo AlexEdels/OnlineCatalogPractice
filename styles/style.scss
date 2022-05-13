@@ -5,13 +5,18 @@
 @import "blocks/general/product";
 @import "blocks/general/button";
 @import "blocks/general/feature";
+@import "blocks/general/subscription";
+@import "blocks/general/quote";
+@import "blocks/general/footerTop";
+@import "blocks/general/socialMediaLinks";
+@import "blocks/general/footerBtm";
 
 * {
     margin: 0;
     padding: 0;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
+body, h1, h2, h3, h4, h5, h6, button {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
