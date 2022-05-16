@@ -1,15 +1,5 @@
-@import "blocks/general/navBar";
-@import "blocks/index/header";
-@import "blocks/index/offerEl";
-@import "blocks/general/catalog";
-@import "blocks/general/product";
-@import "blocks/general/button";
-@import "blocks/general/feature";
-@import "blocks/general/subscription";
-@import "blocks/general/quote";
-@import "blocks/general/footerTop";
-@import "blocks/general/socialMediaLinks";
-@import "blocks/general/footerBtm";
+@import "blocks/general/general";
+@import "blocks/index/index";
 
 * {
     margin: 0;
@@ -19,6 +9,10 @@
 body, h1, h2, h3, h4, h5, h6, button {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    cursor: default;
 }
 
 .b-container {
@@ -54,4 +48,23 @@ body, h1, h2, h3, h4, h5, h6, button {
             }
         }
     }
+}
+
+.b-footer {
+    &_styleJS {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.bodyBack {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: rgba(58, 56, 56, 0.4);
 }

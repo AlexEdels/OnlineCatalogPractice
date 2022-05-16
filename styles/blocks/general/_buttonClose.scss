@@ -1,0 +1,17 @@
+.b-buttonClose {
+    background: none;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        path {
+            fill: #F16D7F;
+        }
+    }
+
+    &_position {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+}

@@ -1,0 +1,56 @@
+.b-catalogScroll {
+    height: 764px;
+    width: 232px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding-top: 37px;
+    padding-left: 34px;
+    box-sizing: border-box;
+
+    @media (max-width: 767.98px) {
+        width: 100vw;
+        margin-left: -16px;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        display: inline;
+    }
+
+    &__el {
+        margin-top: 20px;
+
+        &_margin {
+            margin-top: 24px;
+        }
+
+        h3 {
+            font-size: 14px;
+            line-height: 17px;
+            color: #F16D7F;
+            margin-bottom: 12px;
+            display: inline;
+        }
+
+        ul {
+            padding-left: 21.5px;
+            list-style: none;
+        }
+
+        li {
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+            margin-top: 11px;
+            width: fit-content;
+
+            &:hover {
+                cursor: pointer;
+                color: #F16D7F;
+            }
+        }
+    }
+}

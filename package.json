@@ -1,0 +1,19 @@
+{
+  "name": "onlinecatalogpractice",
+  "version": "1.0.0",
+  "description": "Здесь будет выполнятся домашнее задание для курса\r HTML/CSS Профессиональная верстка.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexEdels/OnlineCatalogPractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexEdels/OnlineCatalogPractice/issues"
+  },
+  "homepage": "https://github.com/AlexEdels/OnlineCatalogPractice#readme"
+}
