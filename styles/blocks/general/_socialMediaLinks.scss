@@ -10,5 +10,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #F16D7F;
+            path {
+                fill: #FFFFFF;
+            }
+        }
     }
 }

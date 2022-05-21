@@ -1,0 +1,29 @@
+.b-addToCartBg {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(58, 56, 56, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+
+    &__button {
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 43px;
+        
+        svg {
+            margin-right: 11px;
+        }
+    }
+
+    &:hover {
+        opacity: 100%;
+    }
+}

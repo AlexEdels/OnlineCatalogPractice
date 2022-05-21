@@ -45,4 +45,17 @@
             grid-template-columns: auto;
         }
     }
+
+    &__imgBox {
+        position: relative;
+        img {
+            display: block;
+        }
+    }
+
+    &__addToCartBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
