@@ -11,8 +11,7 @@ document.querySelector('body').addEventListener('click', event => {
         document.getElementById('main').classList.remove('hidden');
         document.getElementById('feature').classList.remove('b-feature_stylesJS');
         document.querySelector('footer').classList.remove('b-footer_styleJS')
-        catalogScroll.classList.remove('animate__slideInDown');
-        catalogScroll.classList.add('animate__slideInUp');
+        catalogScroll.classList.remove('animate__slideInDown.animate__slideInRight');
     }
 });
 
@@ -21,6 +20,7 @@ menuEl.addEventListener('click', () => {
     document.getElementById('bodyBack').classList.toggle('bodyBack');
     catalogScroll.classList.add('animate__slideInDown');
     if( window.innerWidth <= 767.98) {
+        catalogScroll.classList.add('animate__slideInRight');
         document.getElementById('main').classList.toggle('hidden');
         document.getElementById('feature').classList.toggle('b-feature_stylesJS');
         document.querySelector('footer').classList.toggle('b-footer_styleJS')
@@ -33,6 +33,5 @@ buttonClose.addEventListener('click', () => {
     document.getElementById('main').classList.remove('hidden');
     document.getElementById('feature').classList.remove('b-feature_stylesJS');
     document.querySelector('footer').classList.remove('b-footer_styleJS')
-    catalogScroll.classList.remove('animate__slideInDown');
-    catalogScroll.classList.add('animate__slideInUp');
+    catalogScroll.classList.remove('animate__slideInDown.animate__slideInRight');
 });
