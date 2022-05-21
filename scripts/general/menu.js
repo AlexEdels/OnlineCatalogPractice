@@ -11,12 +11,15 @@ document.querySelector('body').addEventListener('click', event => {
         document.getElementById('main').classList.remove('hidden');
         document.getElementById('feature').classList.remove('b-feature_stylesJS');
         document.querySelector('footer').classList.remove('b-footer_styleJS')
+        catalogScroll.classList.remove('animate__slideInDown');
+        catalogScroll.classList.add('animate__slideInUp');
     }
 });
 
 menuEl.addEventListener('click', () => {
     catalogScroll.classList.toggle('hidden');
     document.getElementById('bodyBack').classList.toggle('bodyBack');
+    catalogScroll.classList.add('animate__slideInDown');
     if( window.innerWidth <= 767.98) {
         document.getElementById('main').classList.toggle('hidden');
         document.getElementById('feature').classList.toggle('b-feature_stylesJS');
@@ -30,4 +33,6 @@ buttonClose.addEventListener('click', () => {
     document.getElementById('main').classList.remove('hidden');
     document.getElementById('feature').classList.remove('b-feature_stylesJS');
     document.querySelector('footer').classList.remove('b-footer_styleJS')
+    catalogScroll.classList.remove('animate__slideInDown');
+    catalogScroll.classList.add('animate__slideInUp');
 });
