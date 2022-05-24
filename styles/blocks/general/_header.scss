@@ -1,4 +1,53 @@
 .b-header {
     height: 148px;
     background: #F8F3F4;
+
+    &__content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        @media (max-width: 767.98px) {
+            padding-top: 24px;
+            padding-bottom: 46px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    h1, li {
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+    }
+
+    li {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+
+    a {
+        color: #636363; 
+    }
+
+    &__breadcrumb {
+        &_margin {
+            margin: 0 !important;
+        }
+        &_active {
+            font-weight: 700 !important;
+            color: #F16D7F !important;
+        }
+    }
 }

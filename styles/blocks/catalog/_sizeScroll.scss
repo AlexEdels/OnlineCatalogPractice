@@ -1,0 +1,32 @@
+.b-sizeScroll {
+
+    &_parent {
+        position: relative;
+    }
+    
+    &_position {
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    background-color: #FFFFFF;
+    width: 79px;
+    padding: 7px 0px 11px 9px;
+    box-sizing: border-box;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    &__label {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+    }
+
+    &__input {
+        border: 1px solid #EBEBEB;
+        border-radius: 0 !important;
+    }
+}   

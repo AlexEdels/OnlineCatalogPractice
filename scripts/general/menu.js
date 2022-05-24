@@ -19,13 +19,17 @@ menuEl.addEventListener('click', () => {
     catalogScroll.classList.toggle('hidden');
     document.getElementById('bodyBack').classList.toggle('bodyBack');
     catalogScroll.classList.add('animate__slideInDown');
-    if( window.innerWidth <= 767.98) {
+    if(window.innerWidth <= 767.98) {
         catalogScroll.classList.add('animate__slideInRight');
-        document.getElementById('main').classList.toggle('hidden');
-        document.getElementById('feature').classList.toggle('b-feature_stylesJS');
-        document.querySelector('footer').classList.toggle('b-footer_styleJS')
+        if (document.getElementById('bodyBack').classList.contains('bodyBack')) {
+            document.getElementById('main').classList.toggle('hidden');
+            document.getElementById('feature').classList.toggle('b-feature_stylesJS');
+            document.querySelector('footer').classList.toggle('b-footer_styleJS')
+        }
     }
 });
+
+
 
 buttonClose.addEventListener('click', () => {
     catalogScroll.classList.add('hidden');
