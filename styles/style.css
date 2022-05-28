@@ -225,8 +225,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #F26376;
+  color: #F26376 !important;
   margin: 0 auto;
+  cursor: pointer;
+}
+
+.b-button p {
+  cursor: pointer;
 }
 
 .b-button_margin {
@@ -246,7 +251,7 @@
 }
 
 .b-button_hover:hover {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   background-color: #F16D7F;
 }
 
@@ -410,7 +415,7 @@
   width: 100px;
   height: 49px;
   background: #E05C6E;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -736,7 +741,7 @@
 .b-addToCartBg__button {
   background-color: transparent;
   border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1085,10 +1090,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-right: 28px;
+  cursor: pointer;
+}
+
+.b-navCatalog__button h3, .b-navCatalog__button h4 {
+  cursor: pointer;
 }
 
 .b-navCatalog__button:last-child {
@@ -1260,6 +1267,7 @@
 .b-sizeScroll__input {
   border: 1px solid #EBEBEB;
   border-radius: 0 !important;
+  cursor: pointer;
 }
 
 .b-filterScroll {

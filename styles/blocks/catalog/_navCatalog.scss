@@ -28,8 +28,11 @@
         border: none;
         display: flex;
         align-items: center;
-        justify-content: center;
         margin-right: 28px;
+        cursor: pointer;
+        h3, h4 {
+            cursor: pointer;
+        }
 
         &:last-child {
             margin-right: 0;
