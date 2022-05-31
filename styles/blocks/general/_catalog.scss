@@ -17,6 +17,14 @@
         }
     }
 
+    &_marginBtm {
+        margin-bottom: 128px;
+    
+        @media (max-width: 767.98px) {
+            margin-bottom: 64px;
+        }
+    }
+
     &__title {
         text-align: center;
         font-size: 30px;

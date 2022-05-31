@@ -1,0 +1,113 @@
+.b-productDesc {
+    max-width: 1140px;
+    min-height: 601px;
+    padding: 64.5px 63px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+
+    @media (max-width: 767.98px) {
+        padding: 64.5px 25px;
+    }
+
+    &_position {
+        margin: 0 auto 128px;
+        position: relative;
+
+        @media (min-width: 1364.98px) {
+            margin-top: -65px;
+        }
+
+        @media (max-width: 767.98px) {
+            margin-bottom: 64px;
+        }
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+    }
+
+    &__h4 {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+    }
+
+    &__h5 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+    }
+
+    &__p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5E5E5E;
+        max-width: 555px;
+        text-align: center;
+        margin: 48px auto 33px;
+    }
+
+    &__pinkLine {
+        width: 64px;
+        height: 3px;
+        background-color: #EF5B70;
+        opacity: 1;
+        border: none;
+        margin: 12px auto;
+    }
+
+    &__greyLine {
+        max-width: 642px;
+        margin: 65px auto;
+        background-color: #EAEAEA;
+        opacity: 1;
+        border: none;
+        height: 1px;
+
+        @media (max-width: 767.98px) {
+            margin-left: 75px;
+            margin-right: 75px;
+        }
+    }
+
+    &__navCatalog {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    &__button {
+        width: 211px;
+        height: 47px;
+        border: 1px solid #FF6A6A;
+        margin-top: 49px;
+
+        path {
+            fill: #FF6A6A;
+        }
+
+        p {
+            color: #FF6A6A;
+            padding-left: 22px;
+        }
+
+        &:hover {
+            background-color: #FF6A6A;
+
+            path {
+                fill: #FFFFFF;
+            }
+
+            p {
+                color: #FFFFFF;
+            }
+        }
+    }
+}

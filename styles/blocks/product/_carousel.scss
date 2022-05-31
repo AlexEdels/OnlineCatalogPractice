@@ -1,0 +1,53 @@
+.b-carousel {
+    height: 777px;
+    padding-top: 10.5px;
+    background-color: #F7F7F7;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1364.98px) {
+        height: 624px;
+        align-items: center;
+    }
+
+    &__imgBox {
+        img {
+            display: block;
+            object-fit: contain;
+            max-height: 724px;
+
+            @media (max-width: 1364.98px) {
+                max-height: 565px;
+            }
+
+            @media (max-width: 767.98px) {
+                max-height: 454px;
+            }
+        }
+    }
+
+    &__button{
+        background: rgba(42, 42, 42, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        opacity: 1 !important;
+        width: 47px !important;
+        height: 47px !important;
+        bottom: 50% !important;
+        top: auto !important;
+
+        &:hover {
+            path {
+                fill: #F16D7F;
+            }
+        }
+    }
+
+    &__dropdown {
+        &_rotate {
+            transform: rotate(180deg);
+        }
+    }
+}
