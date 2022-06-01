@@ -1,0 +1,45 @@
+.b-basket {
+    &__relative {
+        position: relative;
+    }
+
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: 42px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+
+    @media (min-width: 340px) {
+        font-size: 16px;
+    }
+
+    @media (min-width: 552px) {
+        width: 500px;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 10px;
+    }
+
+    &__header {
+        font-weight: bold;
+    }
+
+    &__total {
+        font-weight: bold;
+        text-align: right;
+    }
+
+    &_hidden {
+        display: none;
+    }
+}

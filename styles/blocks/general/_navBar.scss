@@ -13,14 +13,14 @@
     display: flex;
     justify-content: space-between;
 
-    &__right {
+    &__left {
         display: grid;
         grid-template-columns: auto auto;
         align-items: flex-end;
         gap: 41px;
     }
 
-    &__left {
+    &__right{
         display: grid;
         grid-template-columns: auto auto auto;
         align-items: flex-end;
@@ -39,6 +39,7 @@
 
 .b-cart {
     position: relative;
+    cursor: pointer;
 
     img {
         display: block;

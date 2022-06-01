@@ -16,11 +16,11 @@
     <div class="b-head b-head_paddingTop">
         <div class="b-container">
             <nav class="b-head__navBar b-navBar b-menu">
-                <div class="b-navBar__right">
+                <div class="b-navBar__left">
                     <a href="index.html"><img src="images/general/nav/logo.svg" alt="logo"></a>
                     <img src="images/general/nav/search.svg" alt="search">
                 </div>
-                <div class="b-navBar__left">
+                <div class="b-navBar__right">
                     <svg id="menuEl" class="b-menu__menuEl" width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
                         </svg>
@@ -104,9 +104,23 @@
                     </div>
 
                     <img class="b-navBar_hidden" src="images/general/nav/cabinet.svg" alt="cabinet">
-                    <div class="b-navBar__cart b-cart b-navBar_hidden">
+                    <div class="b-navBar__cart b-cart b-navBar_hidden b-basket__relative">
                         <img src="images/general/nav/cart.svg" alt="cart">
-                        <span class="b-cart__numbOfPrdct">5</span>
+                        <span class="b-cart__numbOfPrdct">0</span>
+                    </div>
+
+                    <div class="b-basket b-basket_hidden">
+                        <div class="b-basket__row b-basket__header">
+                            <div>Product Name</div>
+                            <div>Quantity</div>
+                            <div>Price Per Piece</div>
+                            <div>Total</div>
+                        </div>
+                    
+                        <div class="b-basket__total">
+                            Total Amount Of Products:
+                            $<span class="b-basket__totalValue">0</span>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -178,7 +192,7 @@
                     Shop for items based on what we featured in this week
                 </h3>
                 <div class="b-catalog__box">
-                    <div class="b-catalog__product b-product">
+                    <div class="b-catalog__product b-product" data-id="1" data-name="Men's Jacket NONDO" data-price="59.00">
                         <div class="b-catalog__imgBox">
                             <img src="images/general/catalog/jacket.png" alt="Men's Jacket">
                             <div class="b-catalog__addToCartBg b-addToCartBg">
@@ -192,18 +206,18 @@
                         </div>
                         <div class="b-product__description">
                             <h2>
-                                ELLERY X M'O CAPSULE
+                                Men's Jacket NONDO
                             </h2>
                             <p>
                                 Known for her sculptural takes on traditional tailoring, 
                                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
                             <h3>
-                                $52.00
+                                $59.00
                             </h3>
                         </div>
                     </div>
-                    <div class="b-catalog__product b-product">
+                    <div class="b-catalog__product b-product" data-id="10" data-name="Woomen's Suit PAOLO" data-price="63.00">
                         <div class="b-catalog__imgBox">
                             <img src="images/general/catalog/woomenSuit.png" alt="Woomen's Suit">
                             <div class="b-catalog__addToCartBg b-addToCartBg">
@@ -217,18 +231,18 @@
                         </div>
                         <div class="b-product__description">
                             <h2>
-                                ELLERY X M'O CAPSULE
+                                Woomen's Suit PAOLO
                             </h2>
                             <p>
                                 Known for her sculptural takes on traditional tailoring, 
                                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
                             <h3>
-                                $52.00
+                                $63.00
                             </h3>
                         </div>
                     </div>
-                    <div class="b-catalog__product b-product">
+                    <div class="b-catalog__product b-product" data-id="3" data-name="Men's Hoodie DOLCE" data-price="88.00">
                         <div class="b-catalog__imgBox">
                             <img src="images/general/catalog/hoodie.png" alt="Men's Hoodie">
                             <div class="b-catalog__addToCartBg b-addToCartBg">
@@ -242,18 +256,18 @@
                         </div>
                         <div class="b-product__description">
                             <h2>
-                                ELLERY X M'O CAPSULE
+                                Men's Hoodie DOLCE
                             </h2>
                             <p>
                                 Known for her sculptural takes on traditional tailoring, 
                                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
                             <h3>
-                                $52.00
+                                $88.00
                             </h3>
                         </div>
                     </div>
-                    <div class="b-catalog__product b-product">
+                    <div class="b-catalog__product b-product" data-id="4" data-name="Men's Chinos KARO" data-price="12.00">
                         <div class="b-catalog__imgBox">
                             <img src="images/general/catalog/chinos.png" alt="Men's Chinos">
                             <div class="b-catalog__addToCartBg b-addToCartBg">
@@ -267,18 +281,18 @@
                         </div>
                         <div class="b-product__description">
                             <h2>
-                                ELLERY X M'O CAPSULE
+                                Men's Chinos KARO
                             </h2>
                             <p>
                                 Known for her sculptural takes on traditional tailoring, 
                                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
                             <h3>
-                                $52.00
+                                $12.00
                             </h3>
                         </div>
                     </div>
-                    <div class="b-catalog__product b-product">
+                    <div class="b-catalog__product b-product" data-id="11" data-name="Woomen's Blazer VANDI" data-price="46.00">
                         <div class="b-catalog__imgBox">
                             <img src="images/general/catalog/woomenBlazer.png" alt="Woomen's Blazer">
                             <div class="b-catalog__addToCartBg b-addToCartBg">
@@ -292,18 +306,18 @@
                         </div>
                         <div class="b-product__description">
                             <h2>
-                                ELLERY X M'O CAPSULE
+                                Woomen's Blazer VANDI
                             </h2>
                             <p>
                                 Known for her sculptural takes on traditional tailoring, 
                                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
                             <h3>
-                                $52.00
+                                $46.00
                             </h3>
                         </div>
                     </div>
-                    <div class="b-catalog__product b-product">
+                    <div class="b-catalog__product b-product" data-id="12" data-name="Woomen's T-Shirt CANCA" data-price="99.00">
                         <div class="b-catalog__imgBox">
                             <img src="images/general/catalog/woomenTShirt.png" alt="Woomen's TShirt">
                             <div class="b-catalog__addToCartBg b-addToCartBg">
@@ -317,14 +331,14 @@
                         </div>
                         <div class="b-product__description">
                             <h2>
-                                ELLERY X M'O CAPSULE
+                                Woomen's T-Shirt CANCA
                             </h2>
                             <p>
                                 Known for her sculptural takes on traditional tailoring, 
                                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
                             <h3>
-                                $52.00
+                                $99.00
                             </h3>
                         </div>
                     </div>
@@ -439,6 +453,8 @@
     </footer>
 
     <script src="scripts/general/menu.js"></script>
+    <script src="scripts/general/basket.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
