@@ -1,0 +1,128 @@
+.b-productCard {
+    display: flex;
+    height: 306px;
+    width: 100%;
+    box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
+    position: relative;
+
+    @media (max-width: 767.98px) {
+        height: 188px;
+    }
+
+    &_marginTop {
+        margin-top: 40px;
+
+        @media (max-width: 767.98px) {
+            margin-top: 32px;
+        }
+    }
+
+    &__imgBox {
+        height: 306px;
+
+        @media (max-width: 767.98px) {
+            height: 188px;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__info {
+        padding-top: 22px;
+        padding-left: 31px;
+
+        @media (max-width: 767.98px) {
+            padding-top: 13px;
+            padding-left: 17px;
+        }
+    }
+
+    &__h3 {
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+        margin-bottom: 42px;
+
+        @media (max-width: 767.98px) {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 25px;
+            width: 140px;
+        }
+
+        @media (max-width: 374.98px) {
+            font-size: 14px;
+            width: 120px;
+        }
+    }
+
+    &__ul {
+        list-style-type: none;
+        padding-left: 0;
+        li {
+            &:not(:first-child) {
+                margin-top: 6px;
+
+                @media (max-width: 767.98px) {
+                    margin-top: 4px;
+                }
+            }
+            font-size: 22px;
+            line-height: 26px;
+            color: #575757;
+
+            span {
+                color: #6F6E6E;
+            }
+
+            @media (max-width: 767.98px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            @media (max-width: 767.98px) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+
+    &__spanPrice {
+        color: #EF5B70 !important;
+    }
+
+    &__spanQuantity {
+        border: 1px solid #EAEAEA;
+        padding: 1.5px 16px;
+        margin-left: 24px;
+
+        @media (max-width: 767.98px) {
+            padding: 1.5px 10px;
+            margin-left: 8px;
+        }
+    }
+
+    &__buttonClose_position {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        @media (max-width: 767.98px) {
+            top: 17px;
+            right: 12px;
+
+            svg {
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+
+}

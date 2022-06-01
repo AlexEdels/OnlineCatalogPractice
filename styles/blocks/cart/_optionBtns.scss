@@ -1,0 +1,40 @@
+.b-optionsBtnsBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    &_marginTop {
+        margin-top: 72px;
+
+        @media (max-width: 1364.98px) {
+            max-width: 508px;
+            margin: 0 auto;
+            margin-top: 62px;
+        }
+
+        @media (max-width: 767.98px) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.b-optionsBtns {
+    padding: 17px 40px;
+    border: 1px solid #A4A4A4;
+    background: #FFFFFF !important;
+    position: relative;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+
+    @media (max-width: 767.98px) {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 10px 18px;
+    }
+
+    @media (max-width: 374.98px) {
+        font-size: 10px;
+    }
+}

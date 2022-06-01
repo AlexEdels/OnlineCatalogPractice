@@ -1,0 +1,81 @@
+.b-registrForm {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 767.98px) {
+        width: 100%;
+    }
+
+    &__input {
+        width: 360px;
+        height: 45px;
+        box-sizing: border-box;
+        padding: 13px 0 16px 17px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #222222;
+        margin-top: 20px;
+        border: 1px solid #A4A4A4;
+
+        @media (max-width: 767.98px) {
+            width: 100%;
+        }
+
+        &::placeholder {
+            color: #B1B1B1;
+        }
+    }
+
+    &__gender {
+        margin-top: 31px;
+        margin-bottom: 33px;
+
+        input {
+            border: 1px solid #A4A4A4;
+            width: 17px;
+            height: 17px;
+        }
+
+        label {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+            margin-left: 8px;
+            padding-top: 6px;
+        }
+    }
+
+    &__p {
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+
+    &__button {
+        border: none;
+        background: #F16D7F;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        text-align: center;
+        width: 167px;
+        height: 50x;
+        padding: 16px 29px;
+        margin-top: 39px;
+
+        svg {
+            margin-left: 10px;
+            position: relative;
+            top: -2px;
+        }
+    }
+}
